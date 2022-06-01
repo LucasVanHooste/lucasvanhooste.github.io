@@ -41,14 +41,17 @@ body {
 }
 
 ul {
-	padding: 0;
+	/* padding: 0; */
 	margin: 0;
 }
 
 ul li {
 	list-style: disc;
-	font-size: 17px;
+	/* font-size: 17px; */
 	line-height: 1.59;
+	text-align: left;
+	padding-top: .5%;
+	padding-bottom: 1%;
 }
 
 a { 
@@ -138,12 +141,6 @@ iframe{
     height: 100%;
 }
 
-.col-3 img{
-    float: left;
-  width: 33.33%;
-  padding: 5px;
-}
-
 code {
 	background-color: #ee6e73;
 	border-radius: 2px;
@@ -171,7 +168,7 @@ kbd {
 	background-color: #ddd;
 	padding: 4px 6px;
 	border-radius: 2px;
-	color: ;
+	/* color: ; */
 }
 
 address {
@@ -411,7 +408,7 @@ button:focus {
 	display: inline;
 	float: left;
 	width: 100%;
-	padding: 28% 10%;
+	padding: 22% 10% 30%;
 	text-align: center;
 }
 
@@ -850,6 +847,11 @@ button:focus {
     border-color: #fff;
 }
 
+#bottom-img {
+	padding-top: 2.5%;
+	padding-bottom: 2.5%;
+}
+
 
 /*--------------------*/
 /* CLIENT TESTIMONIALS */
@@ -979,7 +981,7 @@ button:focus {
 /*--------------------*/
 
 #mu-contact {
-	background-color: #f8f8f8;
+	background-color: #ffffff;
 	display: inline;
 	float: left;
 	width: 100%;
@@ -1389,15 +1391,6 @@ button:focus {
 			
     .mu-portfoliofeatured-area{
         padding: 15% 0 0 0;
-    }
-    
-    .col-3 img{
-        float: none;
-    width: 100%;
-    padding: 5px;
-}
-    .col-md-6 img{
-        padding: 2.5%;
     }
 }
 

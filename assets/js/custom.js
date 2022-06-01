@@ -155,8 +155,11 @@
 	/* ----------------------------------------------------------- */
 	/*  6. PORTFOLIO GALLERY
 	/* ----------------------------------------------------------- */ 
-		$('.filtr-container').filterizr();
 
+		$(window).on('load', function() {
+			$('.filtr-container').filterizr();
+		});
+		
 		//Simple filter controls
 
 	    $('.mu-simplefilter li').click(function() {
