@@ -31,7 +31,7 @@
 
 	jQuery(window).bind('scroll', function () {
 
-    if ($(window).scrollTop() > 100) {
+    if ($(window).scrollTop() > 600) {
 
         $('#mu-header').addClass('mu-fixed-nav');
         
@@ -47,9 +47,10 @@
 
 		var typed = new Typed('#typed', {
 		    stringsElement: '#typed-strings',
-		    typeSpeed: 20,
-		    backSpeed: 20,
-		    startDelay: 1000,
+		    typeSpeed: 30,
+		    backSpeed: 25,
+			backDelay: 1500,
+		    startDelay: 1500,
 		    loop: true,
 		    loopCount: Infinity
 		});
@@ -112,7 +113,7 @@
 		// so we can get a fancy scroll animation
 		menuItems.click(function(e){
 		  var href = $(this).attr("href"),
-		      offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+22;
+		      offsetTop = href === "#" ? 0 : $(href).offset().top;
 		  jQuery('html, body').stop().animate({ 
 		      scrollTop: offsetTop
 		  }, 1500);
