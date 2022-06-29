@@ -76,7 +76,7 @@
 
 	<section id="mu-featured-slider">
 		<div class="mu-portfoliofeatured-area">
-			<img src="../images/portfolio/MeshSplitting/Banner.jpg" alt="MeshSplittingBanner">
+			<img src="../images/portfolio/Comic/Banner.png" alt="ComicBookShaderBanner">
 			<!--						<h1>Privacy Policy</h1>-->
 
 		</div>
@@ -97,65 +97,38 @@
 						<div class="mu-about-area">
 
 							<div class="mu-privacy-header">
-								<h2>Dynamic Mesh Splitting</h2>
+								<h2>Comic Book Shader</h2>
 								<span class="mu-header-dot"></span>
 
 
 
 								<div class="mu-portfolio-content">
-									<p>Dynamic Mesh Splitting is a Unity package I created for splitting 3D meshes at
-										runtime.
-										The algorithm uses an infinite plane in 3D space to divide a mesh into two new
-										meshes.
-										It puts a heavy focus on Data Oriented Design and performance.
-									</p>
+									<h6>About</h6>
 
-									<br>
-									<h6>Capabilities & Limitations</h6>
-
-									<p>The algorithm is able to split concave meshes that don't have holes which are
-										created by the shape of their geomerty &#40;genus 0&#41;.
-										This means it won't be able to split torus shapes correctly across.</p>
-										<ul>
-											<li>Splitting of skinned meshes is supported.</li>
-											<li>Meshes with submeshes are also supported.</li>
-											<li>Splitting can be done asynchronous to avoild lag spikes.</li>
-											<li>Custom materials and uv bounds can be applied to the caps created by
-												splitting.</li>
-											<li>Island detection is not implemented, meaning that all parts of a mesh
-												that lie on the same side of the plane are part of the same split mesh.
-												Even if they are not attached to eachother anymore.</li>
-										</ul>
+									<p>This is a Unity shader I coded as practice while I was learning shaders with the book 
+										<a href="https://learn.jettelly.com/unity-shader-bible/" target="_blank"><u>Unity Shader Bible</u></a>. 
+										It is inspired by Roy Lichtenstein's Pop Art work and I tried to match the style as close as I could in 3D.</p>
 										<br>
-										<p>I used an earclipping inplementation to triangulate the slice cap.
-											Faster algotithms exist, but earclipping was more straightforward to
-											implement.</p>
+										<p>The shader maps the colors of the main texture to a Red/Yellow/Blue/Black/White color pallet. 
+											The alpha channel is used to determine the pattern that is rendered. (0-25% dots, 25-75% inverse dots, 75-100% solid).
+										The outline is simply done by extruding the vertices by their normals in clip space. 
+										I think applying an edge detection algorithm for the outline would make it match the style better, 
+										but that will be something I do if I get back to this in the future.</p>
 										<br>
 
 									<h6>Availability</h6>
-									<p>The Unity package and original project are licensed under MIT, available on
-										<a href="https://github.com/LucasVanHooste/DynamicMeshSplitting"
-											target="_blank"><u>GitHub</u></a></p>
+									<p>You can find the shader on  
+										<a href="https://github.com/LucasVanHooste/UnityShaders"
+											target="_blank"><u>my GitHub</u></a>, licensed under MIT.</p>
+									<br>
+									<h6>Credits</h6>
+									<p>The 3D model is by Ready Player Me on   
+										<a href="https://skfb.ly/6YQIM"
+											target="_blank"><u>Sketchfab</u></a>.</p>
 									<br>
 
-									<!--
-									<div class="row">
-										<div class="col-md-4">
-											<img class="img-responsive" src="../images/portfolio/MeshSplitting/1.png"
-												alt="MeshSplittingImage1">
-										</div>
-										<div class="col-md-4">
-											<img class="img-responsive" src="../images/portfolio/MeshSplitting/2.png"
-												alt="MeshSplittingImage2">
-										</div>
-										<div class="col-md-4">
-											<img class="img-responsive" src="../images/portfolio/MeshSplitting/3.png"
-												alt="MeshSplittingImage3">
-										</div>
-									</div>
--->
 									<div class="resp-iframe">
-										<iframe src="https://youtube.com/embed/r87ck-7QkUo">
+										<iframe src="https://youtube.com/embed/NlRunAZdovU">
 										</iframe>
 									</div>
 								</div>
@@ -168,21 +141,6 @@
 		<!-- End About -->
 
 	</main>
-
-
-	<!-- Start footer -->
-	<!-- <footer id="mu-footer" role="contentinfo">
-		<div class="container">
-			<div class="mu-footer-area">
-				<p class="mu-copy-right">&copy; Copyright <a rel="nofollow" href="http://markups.io">markups.io</a>. All
-					right
-					reserved.</p>
-			</div>
-		</div>
-
-	</footer> -->
-	<!-- End footer -->
-
 
 
 	<!-- jQuery library -->

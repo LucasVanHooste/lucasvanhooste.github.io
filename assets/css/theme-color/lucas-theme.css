@@ -4,7 +4,11 @@ Template Design By MarkUps
 Author URI : http://www.markups.io/
 ========================================*/
 
-
+:root {
+	--main-color: #2e3836;
+	--main-color-light: #76857f;
+	--main-color-trans: #2e3836d5;
+}
 
 .mu-primary-btn:hover,
 .mu-primary-btn:focus,
@@ -16,15 +20,15 @@ Author URI : http://www.markups.io/
 .mu-simplefilter li.active,
 .mu-copy-right a:hover,
 .mu-copy-right a:focus {
-	color: #36445e;
+	color: var(--main-color);
 }
 
 .mu-send-msg-btn:hover,
 .mu-send-msg-btn:focus,
 .mu-social-media a:hover,
 .mu-social-media a:focus {
-	border: 1px solid #36445e;
-	color: #36445e;
+	border: 1px solid var(--main-color);
+	color: var(--main-color);
 }
 
 .mu-contact-top-single .mu-icon,
@@ -35,29 +39,35 @@ Author URI : http://www.markups.io/
 .mu-resume-btn:focus,
 .mu-header-dot,
 .mu-filter-item-content,
-.mu-skill-progress-bar .mu-pro-bar,
-#mu-featured-slider,
+.mu-skill-progress-bar .mu-pro-bar {
+	background-color: var(--main-color);
+}
+
+#mu-featured-slider {
+	background-image: linear-gradient(var(--main-color), var(--main-color), var(--main-color-light));
+}
+
 #mu-header.mu-fixed-nav {
-	background-color: #36445e;
+	background-image: linear-gradient(var(--main-color),  var(--main-color-trans));
 }
 
 .mu-contact-form .form-control:focus {
-	border: 1px solid #36445e;    
+	border: 1px solid var(--main-color);   
 } 
 
 .mu-resume-btn,
 .mu-service-icon-box {
-	border: 2px solid #36445e;
-	color: #36445e;
+	border: 2px solid var(--main-color);
+	color: var(--main-color);
 }
 
 
 .mu-pro-bar .proggress {
-	background-color: #36445e !important;
+	background-color: var(--main-color) !important;
 }
 
 .mu-service-icon-box:hover,
 .mu-service-icon-box:focus {
-    background-color: #36445e;
+    background-color: var(--main-color);
 	color: #fff;
 }

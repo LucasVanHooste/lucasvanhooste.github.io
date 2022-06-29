@@ -78,7 +78,7 @@ h6 {
 
 
 h1 {
-	font-size: 38px;
+	font-size: 32px;
 }
 
 h2 {  
@@ -243,7 +243,7 @@ button:focus {
 	font-size: 14px;
 	font-weight: 700;
 	letter-spacing: 1.5px;
-	padding: 12px 35px;
+	padding: 12px 20px;
 	-webkit-transition: all 0.5s;
 	transition: all 0.5s;
 }
@@ -288,7 +288,7 @@ button:focus {
 	left: 0;
 	right: 0;
 	top: 0;
-	padding: 25px 0;
+	padding: 15px 0;
 	z-index: 999;
 	transition: all 0.5s;
 }
@@ -311,7 +311,7 @@ button:focus {
 #mu-header.mu-fixed-nav {
 	width: 100%;
 	position: fixed;
-	padding: 15px 0;
+	/* padding: 15px 0; */
 }
 
 
@@ -375,7 +375,7 @@ button:focus {
 /*--------------------*/
 
 #mu-featured-slider {
-	background-attachment: fixed;
+	/* background-attachment: fixed; */
 	background-size: cover;
 	background-position: center center;
 	display: inline;
@@ -393,7 +393,9 @@ button:focus {
 }
 .mu-portfoliofeatured-area img{
     width: 100%;
-/*    margin:-10% 0;*/
+	height: 400px;
+	object-fit: cover;
+   /* margin: 0 0 -5% 0%; */
 }
 
 .mu-shortfeatured-area {
@@ -408,7 +410,7 @@ button:focus {
 	display: inline;
 	float: left;
 	width: 100%;
-	padding: 22% 10% 30%;
+	padding: 20% 10% 30%;
 	text-align: center;
 }
 
@@ -421,7 +423,12 @@ button:focus {
 	line-height: 1;
 }
 
+.mu-featured-area img{
+	height: 100px;
+}
+
 .mu-featured-slider-wrapper {
+	margin-top: 5px;
 	display: inline;
 	float: left;
 	width: 100%;
@@ -444,12 +451,12 @@ button:focus {
 #typed span,
 .typed-cursor {
 	color: #fff;
-	font-size: 30px;
+	font-size: 40px;
 	font-weight: 600;
 }
 
 .mu-featured-content {
-	margin-top: 15px;
+	margin-top: 5px;
 	display: inline;
 	float: left;
 	width: 100%;
@@ -479,7 +486,7 @@ button:focus {
 .mu-about-area {
 	display: inline;
 	float: left;
-	padding: 100px 0;
+	padding: 60px 0;
 	width: 100%;
 }
 
@@ -837,7 +844,7 @@ button:focus {
 	margin: 0 5px;
 	-webkit-transition: all 0.5s;
 	transition: all 0.5s;
-	font-size: 16px;
+	font-size: 18px;
 	font-weight: 600;
 	letter-spacing: 1px;
 }
@@ -981,7 +988,7 @@ button:focus {
 /*--------------------*/
 
 #mu-contact {
-	background-color: #ffffff;
+	background-color: #f7f7f7;
 	display: inline;
 	float: left;
 	width: 100%;
