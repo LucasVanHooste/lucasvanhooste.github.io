@@ -393,7 +393,9 @@ button:focus {
 }
 .mu-portfoliofeatured-area img{
     width: 100%;
-/*    margin:-10% 0;*/
+	height: 400px;
+	object-fit: cover;
+   /* margin: 0 0 -5% 0%; */
 }
 
 .mu-shortfeatured-area {
@@ -484,7 +486,7 @@ button:focus {
 .mu-about-area {
 	display: inline;
 	float: left;
-	padding: 100px 0;
+	padding: 60px 0;
 	width: 100%;
 }
 
