@@ -5,9 +5,9 @@ Author URI : http://www.markups.io/
 ========================================*/
 
 :root {
-	--main-color: #2e3836;
-	--main-color-light: #76857f;
-	--main-color-trans: #2e3836d5;
+	--main-color: #2e3136;
+	--main-color-light: #7c7f86;
+	--main-color-trans: #2e3035d5;
 }
 
 .mu-primary-btn:hover,
