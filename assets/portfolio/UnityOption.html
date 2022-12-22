@@ -76,9 +76,7 @@
 
 	<section id="mu-featured-slider">
 		<div class="mu-portfoliofeatured-area">
-			<img src="../images/portfolio/Comic/Banner.jpg" alt="ComicBookShaderBanner">
-			<!--						<h1>Privacy Policy</h1>-->
-
+			<!-- <img src="../images/portfolio/Comic/Banner.png" alt="ComicBookShaderBanner"> -->
 		</div>
 	</section>
 
@@ -97,40 +95,42 @@
 						<div class="mu-about-area">
 
 							<div class="mu-privacy-header">
-								<h2>Comic Book Shader</h2>
+								<h2>Unity Option</h2>
 								<span class="mu-header-dot"></span>
 
 
 
 								<div class="mu-portfolio-content">
-									<h6>About</h6>
 
-									<p>This is a Unity shader I coded as practice while I was learning shaders with the book 
-										<a href="https://learn.jettelly.com/unity-shader-bible/" target="_blank"><u>Unity Shader Bible</u></a>. 
-										It is inspired by Roy Lichtenstein's Pop Art work and I tried to match the style as close as I could in 3D.</p>
+									<div class="row">
+										<h6>About</h6>
+
+										<p>Unity Option is a package I created because I was missing a way to clearly convey that some serialized fields
+											may be optional. For example: A 'Car' component might have a reference to a spare tire gameobject that lives in the hierarchy.
+											Of course not all cars have a spare tire so the reference could be null. This is a problem because the user of your spare tire
+											in code does not know that the value could be null and may cause an error at runtime (although in this example it's more obvious). 
+											The Option type solves this problem by enforcing the user to check if the value is present before accessing it.
+											<br><br>
+											I of course did not invent the concept of an option type. All I did was make it more accessible to people who want to use it 
+											in the Unity editor. It is especially powerful when combined with a project validation tool like the Odin Validator. 
+											(More information about this on the <a href="https://github.com/LucasVanHooste/UnityOption" target="_blank"><u>GitHub repo</u></a>).
+										</p>
 										<br>
-										<p>The shader maps the colors of the main texture to a Red/Yellow/Blue/Black/White color pallet. 
-											The alpha channel is used to determine the pattern that is rendered. (0-25% dots, 25-75% inverse dots, 75-100% solid).
-										The outline is simply done by extruding the vertices by their normals in clip space. 
-										I think applying an edge detection algorithm for the outline would make it match the style better, 
-										but that will be something I do if I get back to this in the future.</p>
-										<br>
-
-									<h6>Availability</h6>
-									<p>You can find the shader on  
-										<a href="https://github.com/LucasVanHooste/UnityShaders"
-											target="_blank"><u>my GitHub</u></a>, licensed under MIT.</p>
-									<br>
-									<h6>Credits</h6>
-									<p>The 3D model is by Ready Player Me on   
-										<a href="https://skfb.ly/6YQIM"
-											target="_blank"><u>Sketchfab</u></a>.</p>
-									<br>
-
-									<div class="resp-iframe">
-										<iframe src="https://youtube.com/embed/NlRunAZdovU">
-										</iframe>
+	
+										<h6>Availability</h6>
+										<p>You can find the package on  
+											<a href="https://github.com/LucasVanHooste/UnityOption"
+												target="_blank"><u>my GitHub</u></a>, licensed under MIT.</p>
 									</div>
+
+									<div class="row">
+										<div id="bottom-img" class="col-md-6">
+										  <img class="" src="../images/portfolio/UnityOption/editor.jpg" alt="image">
+										</div>
+										<div id="bottom-img" class="col-md-6">
+										  <img class="" src="../images/portfolio/UnityOption/code.jpg" alt="image">
+										</div>
+									  </div>
 								</div>
 							</div>
 						</div>
